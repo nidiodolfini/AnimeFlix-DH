@@ -143,35 +143,46 @@ body{
  .carrossel {height: 280px;}
 
 }
-
-
+ 
 @media screen and (max-width:555px){
 
   .box:hover{
-    transform: scale(1.5);
+    transform: scale(1.45);
     transition: all 0.5s ease;
     
   }
 
+  .box:hover .start{
+    transition: 1s;
+    opacity: 1;
+  }
+
+  .box .start img{ 
+    height: 30px;
+    width: 38px;
+  }
+
+  .box .start{
+    padding-top: 120px;
+    padding-left: 72px;
+  }
+
+  .box:hover .start img{ 
+    opacity: 1;
+    height: 30px;
+    width: 38px;
+    transition: 800ms;
+  }
 
   .box .image{
     height: 160px;
     width: 110px;
-   }
- 
-   .start .imageplay{display: none;
-   height: 100px;
-   width: 110px;
-   
   }
+
   .carrossel {height: 250px;}
-
-  .start {
-   padding-top: 25px;
-  }
-
 }
 
+.botoes2 div{z-index: 1;}
 
 
 /*-------------------------------Carrosel 1 @media---------------------------------------*/
