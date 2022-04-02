@@ -1,8 +1,8 @@
 *{
   padding: 0;
   margin: 0;
-  text-decoration: none;/**/
-  box-sizing: border-box;/*abe*/
+  text-decoration: none;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -56,17 +56,13 @@ body{
 
 /*---------------------------------Carrossel 2-------------------------------------- */
 .carrossel {
-  height: 300px;
+  height: 325px;
+  width: 100vw;
   display: flex;
   overflow: hidden;
-  margin-top: 50px;
-  padding-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px 10px 50px 10px ;
   animation: transladar 0.1s;
-}
-
-.carrossel div img {
-  width: 300px;
-  margin-left: 6px;
 
 }
 
@@ -103,8 +99,9 @@ body{
   display: flex;
   width: 100vw;
   justify-content: center;
-  margin-top: 0px;
-  z-index: 1;
+  align-items: center;
+  margin-bottom: 10px;
+ 
 }
 
 .botoes2 div {
@@ -126,87 +123,56 @@ body{
 
 @media screen and (max-width: 1435px) {
 
-  .carrossel div {
-    width: 200px;
-    background: 100%;
-  }
-
-  .carrossel div img {
-    width: 180px;
-  }
+  .carrossel div img { width: 180px;}
 }
-
-@media screen and (max-width: 1032px) {
-
-  .botoes2 {
-    width: 950px;
-  }
-
-  .carrossel div img {
-    width: 180px;
-  }
-}
-
 
 @media screen and (max-width: 800px) {
 
-  .start img {
-    height: 80px;
-    width: 100px;
+  .carrossel div {margin-right: 2.5vw;}
+
+  .box .image{
+   height: 200px;
+   width: 130px;
   }
 
-  .carrossel div img {
-    width: 170px;
-    height: 235px;
-    margin: 2px;
-  }
+  .start .imageplay{
+  height: 110px;
+  width: 130px;
+ }
+
+ .carrossel {height: 280px;}
 
 }
 
-@media screen and (max-width: 375px) {
 
-  .carrossel {
-    flex-direction: column;
-    align-items: center;
-    height: 1820px;
-    width: 400px;
+@media screen and (max-width:555px){
+
+  .box:hover{
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+    
   }
 
-  .box {
-    height: 300px;
-    width: 400px;
-    align-items: center;
-    margin-right: 0;
+
+  .box .image{
+    height: 160px;
+    width: 110px;
+   }
+ 
+   .start .imageplay{display: none;
+   height: 100px;
+   width: 110px;
+   
   }
+  .carrossel {height: 250px;}
 
   .start {
-    display: none;
-  }
-
-  .box .image {
-    width: 175px;
-    height: 250px;
-  }
-
-
-
-  .botoes2 {
-    display: none;
+   padding-top: 25px;
   }
 
 }
 
-@keyframes transladar {
 
-  0% {
-    transform: translate(0);
-  }
-
-  100% {
-    transform: translate(0vw);
-  }
-
-}
 
 /*-------------------------------Carrosel 1 @media---------------------------------------*/
 @media screen and (max-width:425px){

@@ -1,7 +1,7 @@
 
 
 const carrossel = document.querySelector(".carrossel");
-
+const carrossel2 = document.querySelector(".carrossel");
 let button = 0;
 
 function sliderDireita() {
