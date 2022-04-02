@@ -7,9 +7,38 @@
 }
 
 body{
-  background-color: #02021c;
-  
+  background-color: #02021c; 
 }
+
+/* __________CA BEÇARIO__________ */
+
+header{
+  width: 100%;
+  height: 10vh;
+  background-color: #0c0c31;
+
+}
+.alinharMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logow{
+  background-image: url(/Home/img/logo-branca.png);
+  width: 100%;
+  height: 8.5vh;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: roboto thin;
+
+}
+
 
 /*------------------------------------carrossel 1--------------------------------------- */
 .container-fluid{
@@ -123,7 +152,7 @@ body{
   transition: all 0.5s ease;
 }
 /*------------------------------Carrossel 2 @media---------------------------------------*/
-
+/* 
 @media screen and (max-width: 1435px) {
 
   .carrossel div {
@@ -194,7 +223,103 @@ body{
     display: none;
   }
 
+} */
+
+/* ______rodapé_______ */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
 }
+
+.logoEnd{
+  background-image: url(/Home/img/logo-escura.png);
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto ;
+}
+
+.participantes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+.Tizuey {
+  background-color: #02021c;
+  color: white;
+  width: 120px;
+  height: 30px;
+  /* padding: 10px 32px 10px 32px; */
+  font-size: 20px;
+  font-family: roboto thin;
+  border: none;
+}
+
+.p1 {
+  position: relative;
+  display: inline-block;
+}
+
+/* conteudo escondido */
+.links {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  min-width: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links de cada um */
+.links a {
+  background-color: #02021c;
+  text-decoration: none;
+  display: block;
+}
+
+.github{
+  background-image: url(/Home/img/git-hub.png);
+  width: 60px;
+  height: 130px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.linkedin{
+  background-image: url(/Home/img/linkedin.png);
+  width: 60px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* muda a cor de cada link ao passar o mause */
+.links a:hover {background-color:  #0c0c31}
+
+/* sobe os links */
+.p1:hover .links {
+  display: flex;
+  flex-direction: row;
+}
+
+/* muda a cor mando os links são mostrados */
+.p1:hover .Tizuey {
+  background-color: #0c0c31;
+}
+
+
 
 @keyframes transladar {
 
@@ -228,6 +353,39 @@ body{
   }
   
   #mainSlider .carousel-caption h2{ font-size: 15px;}
+
+
+  .carrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .box {
+    display: flex ;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .start {
+    display: none;
+  }
+
+  .box .image {
+    width: auto;
+    height: 100%;
+  }
+
+
+
+  .botoes2 {
+    display: none;
+  }
+
 }
   
 @media screen and (max-width:800px){
