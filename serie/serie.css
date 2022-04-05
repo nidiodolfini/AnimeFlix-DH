@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #02021c;
+  color: white;
+  overflow-x: hidden;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.informacoes {
+  background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-temporadas {
+  margin-left: 50px;
+}
+
+.flex {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  padding-top: 30px;
+  margin-bottom: 110px;
+}
+
+.info img {
+  width: 2%;
+  margin-right: 5px;
+}
+
+.info p {
+  font-size: 15px;
+  background-color: #02021c65;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.botao-assistir {
+  width: 10vw;
+  height: 10vw;
+  background-image: url("./img/icon-play.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.botao-assistir:hover {
+  opacity: 0.4;
+}
+
+.botoes {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.sinopse {
+  padding: 30px;
+  margin-left: 50px;
+  background-color: #02021c69;
+  color: white;
+  width: 35%;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.sinopse:hover {
+  color: #02021c;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.temporadas {
+  display: flex;
+  margin-top: 20px;
+}
+
+.temporadas div {
+  margin-right: 20px;
+}
+
+.degrade {
+  width: auto;
+  height: 20vh;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgb(0, 0, 0)
+  );
+}
+
+.nome {
+  width: 50vw;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.nome img {
+  width: 50vw;
+}
+
+.nome img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.temporadas {
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.carousel {
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.carousel img {
+  width: 350px;
+  margin-bottom: 100px;
+  margin-right: 40px;
+  box-shadow: 0px 10px 10px black;
+}
+
+.carousel div {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.carousel div:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.carousel div h4 {
+  position: absolute;
+  margin-left: 20px;
+  bottom: 70px;
+}
+
+.carousel div p {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 20px;
+}
+
+.play {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.play:hover {
+  opacity: 1;
+}
+
+.botoes2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.botoes2 div {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.botoes2 div img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.botoes2 div img:hover {
+  filter: invert(1);
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1237px) {
+  .informacoes {
+    background-image: url("./img/background-2.png");
+    background-size: cover;
+    background-position: 0px;
+  }
+
+  .sinopse {
+    width: 80%;
+    background-color: #02021c9d;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .informacoes {
+    background-image: url("./img/background-2.png");
+    background-size: 100%;
+    background-position: 0px 0px;
+  }
+
+  .carousel {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .carousel img {
+    width: 100vw;
+  }
+
+  .botoes2 {
+    display: none;
+  }
+
+  .info-temporadas {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .sinopse {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 300px;
+    padding-bottom: 20px;
+    background-color: #02021c79;
+    font-size: 15px;
+  }
+
+  .info {
+    padding-top: 30px;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .info img{
+    width: 8%;
+  }
+
+  .temporadas {
+    margin-left: 20px;
+  }
+}
