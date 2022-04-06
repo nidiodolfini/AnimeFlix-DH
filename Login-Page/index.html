@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation</title>
+	<link rel="icon" href="./img/animation.png">
+	<!--bootstrap usado apenas para ter o icone do olho ocultando ou não a senha-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body class="background" style="background-image: url(img/principal.jpg);">
+	<section class="box-section">
+		<div class="container">
+			<div class="content-center">
+				<div class="form">
+					<div class="login-wrap">
+						<h3 class="text-center">Faça seu login</h3>
+						<form action="#">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="exemplo@email.com" required>
+							</div>
+							<div class="form-group">
+								<input id="password-field" type="password" class="form-control"	placeholder="Senha" required>
+								<span toggle="#password-field"
+									class="fa fa-fw fa-eye field-icon change-icon-password"></span>
+							</div>
+							<div class="form-group">
+								<button class="button">Login</button>
+							</div>
+							<div class="form-group tamanho-display">
+								<div class="checkbox-style">
+									<input id="styled-checkbox" type="checkbox" value="value">
+									<label for="styled-checkbox">Lembrar</label>
+								</div>
+							</div>
+					</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<!--aqui eu chamo a funçao da senha, que visualiza ou nao a senha.-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

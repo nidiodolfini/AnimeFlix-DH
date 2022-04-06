@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 5;
+    font-weight: normal;
+    position: relative;
+    padding: 60px;
+}
+
+.background {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: black;
+}
+
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+/* centraliza a caixa da section*/
+.box-section {
+    padding: 15em 90px;
+}
+
+/*cor do body alterado. 
+Centralizar a caixa do login.  */
+.content-center {
+	display: flex;
+    justify-content: center !important;
+    background: #02021c;
+    box-shadow: 0 15px 32px 0 rgb(255 255 255 / 10%);
+    backdrop-filter: blur(10.5px);
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form {
+    flex: 0 0 41%;
+    max-width: 167%;
+}
+
+/* para centralizar: Faça seu login */
+.text-center {
+	text-align: center !important; 
+	margin-bottom: 1.5rem !important; 
+}
+
+/*Controla a marge entre os campos*/
+.form-group {
+	margin-bottom: 1rem;
+	position: relative; 
+}
+
+/* textos */
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	color: black;
+}
+
+
+/*seçao do HEADING */
+.heading-section{
+	font-size: 28px;
+	color: white;
+}
+
+/* determina a posiçao  */
+.login-wrap{
+	position: relative;
+	color: rgba(255,255,255,.9); 
+}
+
+/* cor da fonte para o h3: faça o seu login */
+.login-wrap	h3 {
+	font-weight: 450px;
+	color:white;
+}
+
+/* alinha o icone em sua determinada posiçao*/
+.field-icon {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	color: rgba(255,255,255,.9);
+}
+
+/* formulario */
+.form-control {
+	height: 50px;
+    color: rgba(255,255,255, 19) !important;
+    border: 1px solid transparent;
+    background: rgba(255,255,255,0.1);
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+	display: flex;
+    width: 92%;
+    font-size: 1rem;
+    transition: border-color 0.80s ease-in-out, 
+	box-shadow 0.55s ease-in-out, 
+	-webkit-box-shadow 0.15s 
+	ease-in-out;
+}
+
+.form-control:hover, .form-control:focus{
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border-color: rgba(255,255,255,.4);
+}
+
+/* para funcionar as cores nos browsers */
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: rgba(255,255,255,.8) !important;
+}
+
+.form-control::-moz-placeholder { /* Firefox 19+ */
+	color: rgba(255,255,255,.8) !important;
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+	color: rgba(255,255,255,.8) !important;
+}
+
+
+/*BOTÃO*/
+.button {
+	cursor: pointer;
+	border-radius: 40px;
+	box-shadow: none!important;
+	text-transform: uppercase;
+	height: 50px;
+	width: 71%;
+    color: rgb(255 255 255) !important;
+    border: 1px solid transparent;
+    background: rgb(45 49 143 / 48%);
+    font-size: 1rem;
+    margin-left: 70px;
+}
+
+.button:hover {
+	border: 1px solid primary;
+	color: white;
+	border: 1px solid white;
+}
+
+@media (max-width: 400px) {
+	.box-section {
+		padding: 10em 0;
+	}
+
+	.form-control {
+		margin-left: -64px;
+	}
+
+}
+
+@media (max-width: 576px) {
+	.box-section {
+		padding: 16em 0;
+	}
+
+	.container {
+		width: 92%;
+	}
+	
+	body {
+		font-size: 15px;
+		line-height: 5;
+		font-weight: normal;
+		position: relative;
+		padding: 0px;
+	}
+		
+	.form-control {
+		border-radius: 24px;
+		padding-left: 13px;
+		width: 159%;
+		margin-left: -65px;
+	}
+
+	.field-icon {
+		top: 50%;
+		left: 10em;
+	}
+
+	.btn {
+		width: 105%;
+		margin-left: -4px;
+	}
+
+	.button {
+		margin-left: 34px;
+	}
+
+	.checkbox-style {
+		margin-left: -51px;
+	}
+
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 1000px; 
+	} 
+
+	.background {
+		height: 1000px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 900px; 
+	} 
+
+	.background {
+		height: 1000px;
+	}
+
+	.tamanho-display {
+		display: flex !important; 
+	}
+	.text-md-right {
+		text-align: right !important; 
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px; 
+	}
+	
+	.background {
+		height: 955px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px; 
+	}
+	
+	.background {
+		height: 655px;
+	}
+}
+
+
+@media (min-width: 2000px) {
+	.container {
+		max-width: 1140px; 
+	}
+	
+	.background {
+		height: 600px;
+	}
+}
