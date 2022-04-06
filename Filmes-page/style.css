@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #02021c;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+header{
+  width: 100%;
+  height: 10vh;
+  background-color: transparent;
+  position: fixed;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.informacoes {
+  width:100vw ;
+  height: 70vh;
+  margin-bottom: 300px;
+}
+
+.caixa2{
+  position: relative;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.caixa2 img{
+  width: auto;
+  height: 80vh;
+  object-fit:fill;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info-temporadas {
+  margin-left: 50px;
+}
+
+.flex {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+.info img {
+  width: 2%;
+  margin-right: 5px;
+}
+
+.info p {
+  font-size: 15px;
+  background-color: #02021c65;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.botao-assistir {
+  width: 10vw;
+  height: 10vw;
+  background-image: url("./img/icon-play.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.botao-assistir:hover {
+  opacity: 0.4;
+}
+
+
+
+.sinopse {
+  padding: 30px;
+  margin-left: 50px;
+  margin-top: 40vh;
+  margin-bottom: 0;
+  background-color: #02021c69;
+  color: white;
+  width: 35%;
+  font-size: 20px;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.sinopse:hover {
+  color: #02021c;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.temporadas {
+  display: flex;
+  margin-top: 20px;
+}
+
+.temporadas div {
+  margin-right: 20px;
+}
+
+
+
+.nome {
+  background-image: url('https://i.postimg.cc/HnTbk4zt/titulo-filme.jpg');
+  width: 37.5vw;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.nome img {
+  width: 50vw;
+}
+
+.nome:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+
+h1{
+  color: #fff;
+  font-size: 5rem;
+  margin-left: 50px;
+}
+
+
+.play {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.play:hover {
+  opacity: 1;
+}
+
+
+.trailer {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 75%;
+  height: auto;
+  margin-top: 200px;
+  margin-bottom: 30px;
+ }
+
+ .trailer iframe, .trailer object, .trailer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+ }
+
+
+
+@media screen and (max-width: 1237px) {
+  .informacoes {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .trailer{
+    margin-top: 300px;
+  }
+
+  .caixa2{
+    top: 50px;
+  }
+
+  .nome{
+    width: 60%;
+    margin: 0;
+  }
+
+  h1{
+    color: #fff;
+    font-size: 5rem;
+    margin-left: 50px;
+  }
+
+  .botao-assistir {
+    width: 16vw;
+    height: 16vw;
+    background-image: url("./img/icon-play.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 20px;
+  }
+  
+  .botao-assistir:hover {
+    opacity: 0.4;
+  }
+
+  .sinopse {
+    width: 70%;
+    margin-left: 0;
+    background-color: #02021c79;
+    font-size: 20px;
+  }
+
+  .info {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .info img{
+    width: 8%;
+  }
+
+  .temporadas {
+    margin-left: 20px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .trailer{
+    margin-top: 200px;
+  }
+  
+  .informacoes {
+    height:  50vh;
+    margin-bottom: 0;
+  }
+
+  .caixa2{
+    top: -120px;
+    object-fit: contain;
+  }
+  .caixa2 img{
+    object-fit: contain;
+    margin-bottom: 200px;
+    width: 100vw;
+  }
+
+  .nome{
+    width: 70vw;
+    margin: 0;
+    margin-top: 0;
+    height: auto;
+  }
+
+  h1{
+    color: #fff;
+    font-size: 8.5vw;
+    margin-left: 50px;
+  }
+
+  .botao-assistir {
+    width: 20vw;
+    height: 20vw;
+    background-image: url("./img/icon-play.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 20px;
+  }
+  
+  .botao-assistir:hover {
+    opacity: 0.4;
+  }
+
+  .sinopse {
+    width: 100%;
+    margin: 0;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    background-color: #02021c79;
+    font-size: 15px;
+    
+  }
+
+  .flex2{
+    margin-top: 0;
+  }
+
+
+
+  .info {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .info img{
+    width: 8%;
+  }
+
+  .temporadas {
+    margin-left: 20px;
+  }
+}
