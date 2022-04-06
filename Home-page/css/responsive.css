@@ -1,0 +1,49 @@
+@media screen and (max-width: 700px) {
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 10px;
+        width: 190px;
+    }
+  
+    .parallax{
+        background-image: url(/Home-page/img/familia2.jpg)!important;
+        background-position: center !important;
+        height: 500px !important;
+      }
+   
+    .trans2{
+        padding-bottom: 100%!important;
+      
+    }
+
+}
+
+@media screen and  (max-width: 1000px) {
+
+    .parallax{
+        background-image: url(/Home-page/img/familia2.jpg)!important;
+        background-position: center !important;
+        height: 700px !important;
+      }
+   .github{
+       height: 150px !important;
+   }
+
+   
+}
+
+@media screen and (min-width:1000px) {
+
+    .descricao{
+        width: 70%;
+    }
+   
+
+   
+}
+
