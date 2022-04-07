@@ -169,7 +169,7 @@ h1{
 }
 
 
-.trailer {
+#trailer {
   margin: 0 auto;
   position: relative;
   padding-bottom: 56.25%;
@@ -181,7 +181,7 @@ h1{
   margin-bottom: 30px;
  }
 
- .trailer iframe, .trailer object, .trailer embed {
+ #trailer iframe, #trailer object, #trailer embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,7 +197,7 @@ h1{
     margin-bottom: 0;
   }
 
-  .trailer{
+  #trailer{
     margin-top: 300px;
   }
 
@@ -258,7 +258,7 @@ h1{
 
 @media screen and (max-width: 480px) {
 
-  .trailer{
+  #trailer{
     margin-top: 200px;
   }
   

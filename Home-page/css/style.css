@@ -14,12 +14,17 @@ header{
   width: 100%;
   height: 10vh;
   background-color: #0c0c31;
+  position: fixed;
+  z-index: 2;
 }
 
 .alinharMenu{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0.6%;
+  margin-bottom: 0;
+  margin-top: 0.2%;
 }
 
 .logow{
@@ -31,7 +36,7 @@ header{
 }
 
 .alinharMenu a{
-  font-size: 20px;
+  font-size: 30px;
   color: #ffffff;
   text-decoration: none;
   font-family: roboto thin;
@@ -85,6 +90,14 @@ header{
 .carousel-indicators .active{ background-color: #65DAF9;}
 
 
+.hfilmes{
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
 /*-------------------------------Carrosel 1 @media---------------------------------------*/
 @media screen and (max-width:425px){
 
@@ -105,6 +118,7 @@ header{
     }
     
     #mainSlider .carousel-caption h2{ font-size: 15px;}
+
   }
     
   @media screen and (max-width:800px){
@@ -126,6 +140,8 @@ header{
     }
       
     #mainSlider .carousel-caption h2{font-size: 25px;}
+
+    
   }
     
   @media screen and (max-width:1280px){
