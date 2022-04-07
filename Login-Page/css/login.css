@@ -151,6 +151,11 @@ h1, h2, h3, h4, h5,
     margin-left: 70px;
 }
 
+.button a{
+	color: rgb(255 255 255) !important;
+	text-decoration: none;
+}
+
 .button:hover {
 	border: 1px solid primary;
 	color: white;
