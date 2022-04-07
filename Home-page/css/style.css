@@ -50,9 +50,14 @@ header{
   
 } 
   
-#mainSlider .carousel-inner{ height: 90vh;}
+#mainSlider .carousel-inner{
+  height: 90vh;
+}
     
-.carousel-item { height: auto;}
+.carousel-item {
+   height: auto;
+   margin-top: 5vh;  
+  }
    
 .carousel-item .carousel-caption{
     display: flex;
@@ -62,7 +67,7 @@ header{
     width: 30vh;
     height: 24vh;
     margin: 0 auto;
-    background: rgba( 189, 16, 224, 0.1 );
+    background: rgba(189, 16, 224, 0.233);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -71,7 +76,7 @@ header{
   
 }
   
-.carousel-item .carousel-caption{top: 57vh;}
+.carousel-item .carousel-caption{top: 50vh;}
   
 #mainSlider .carousel-caption h2{
     font-size: 30px;
@@ -101,6 +106,15 @@ header{
 /*-------------------------------Carrosel 1 @media---------------------------------------*/
 @media screen and (max-width:425px){
 
+  header{
+    height: auto;
+  }
+ 
+  
+  .logow{
+    height: 7vh;
+  }
+  
     #mainSlider .carousel-inner, #mainSlider .carousel-item{height: 80vh;}
     
     #mainSlider .carousel-item .img{
@@ -109,7 +123,7 @@ header{
       height: 100%;
     }
     
-    #mainSlider .carousel-caption{top:60vh;} 
+    #mainSlider .carousel-caption{top:50vh;} 
   
     .carousel-caption .play{
       width: 40%;
@@ -131,7 +145,7 @@ header{
       height: 100%;
     }
       
-    #mainSlider .carousel-caption{top:65vh;} 
+    #mainSlider .carousel-caption{top:50vh;} 
   
     .carousel-caption .play{
       width: 40%;
