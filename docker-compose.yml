@@ -1,0 +1,34 @@
+# determina a versão do script está sendo escrito e as funcionalidades
+version: "3.8"
+# 
+services:
+
+  db:
+    image: mysql 
+    #docker image pull mysql
+    container_name: dbserver
+    ports:
+      - "3307:3306"
+      # docker run -p 3307:3006 mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD: qualquersenha
+      - MYSQL_USER: admin
+      - MYSQL_PASSWORD: senhadmin
+      - MYSQL_DATABASE: qualquernome
+
+
+  web:
+    build: .
+    # docker image build .
+    container_name: doctorcontainer
+    ports: 
+      - "81:80"
+      # docker run -p81:80 httpd
+
+
+# mysql 3306
+# http 80
+# https 443
+# e-mail 25
+# pop 110
+#
