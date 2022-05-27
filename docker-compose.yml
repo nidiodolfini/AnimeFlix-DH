@@ -1,29 +1,37 @@
-# determina a versão do script está sendo escrito e as funcionalidades
+# determina a versão do script está sendo escrito e as funcionalidades, opcional desde a versão v1.27.0
 version: "3.8"
-# 
+# o compose trata todos os containers como serviço, então é assim que vamos chamá-los em nosso arquivo de configuração
 services:
-
+# aqui definimos o nome do serviço, ele pode ter qualquer nome, mas normalmente fazemos referencia ao serviço do container
   db:
+    # passamos o nome da imagem, aqui no caso estamos usando o mysql a mesma será baixada do Docker Hub caso não tenha localmente
+    # a definição de image é semelhante a FROM do Dockerfile ou ai comando docker image pull mysql no CLI do Docker
     image: mysql 
-    #docker image pull mysql
+    # comando para definir o nome do container
     container_name: dbserver
+    # semelhante a FLAG -p do CLI do Docker, faz a liberação das portas listadas
     ports:
       - "3307:3306"
-      # docker run -p 3307:3006 mysql
+    # Definição das variáveis de ambiente
     environment:
-      - MYSQL_ROOT_PASSWORD: qualquersenha
-      - MYSQL_USER: admin
-      - MYSQL_PASSWORD: senhadmin
-      - MYSQL_DATABASE: qualquernome
-
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: wordpressdb
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: my-secret-pw
 
   web:
     build: .
+    image: meuwebserver
     # docker image build .
     container_name: doctorcontainer
     ports: 
       - "81:80"
       # docker run -p81:80 httpd
+
+  
+
+
+
 
 
 # mysql 3306
